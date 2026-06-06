@@ -18,6 +18,14 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, vedic-vastram');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Vedic Vastram');
+  });
+
+  it('should include the provided contact details', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).toContain('9549537163');
+    expect(compiled.textContent).toContain('vedicvastram.india@gmail.com');
   });
 });
