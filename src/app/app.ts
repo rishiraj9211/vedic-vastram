@@ -38,60 +38,60 @@ export class App {
       name: 'Sanganeri Floral Border Print',
       category: 'Screen Print',
       fabric: 'Cotton',
-      image: '/assets/green-fabric-closeup.jpeg',
+      image: 'assets/green-fabric-closeup.jpeg',
       description: 'Fine floral repeats with a detailed border layout for suits, dress material, and apparel lines.'
     },
     {
       name: 'Deep Green Printed Yardage',
       category: 'Screen Print',
       fabric: 'Rayon',
-      image: '/assets/finished-green-fabric.jpeg',
+      image: 'assets/finished-green-fabric.jpeg',
       description: 'Flowing printed fabric with crisp motifs, suitable for wholesale apparel and boutique collections.'
     },
     {
       name: 'Bright Floral Fashion Fabric',
       category: 'Custom Print',
       fabric: 'Rayon',
-      image: '/assets/floral-yellow-fabric.jpeg',
+      image: 'assets/floral-yellow-fabric.jpeg',
       description: 'Vibrant custom floral runs for fashion brands, retailers, and seasonal collections.'
     },
     {
       name: 'Manual Screen Printing Work',
       category: 'Screen Print',
       fabric: 'Cotton',
-      image: '/assets/manual-screen-printing.jpeg',
+      image: 'assets/manual-screen-printing.jpeg',
       description: 'Hands-on printing support for controlled impressions, sampling, and smaller custom requirements.'
     }
   ];
 
   readonly gallery: GalleryImage[] = [
     {
-      src: '/assets/screen-printing-line.jpeg',
+      src: 'assets/screen-printing-line.jpeg',
       alt: 'Long screen printing line at Vedic Vastram in Sanganer Jaipur',
       title: 'Printing line'
     },
     {
-      src: '/assets/continuous-print-run.jpeg',
+      src: 'assets/continuous-print-run.jpeg',
       alt: 'Continuous fabric print run with green Sanganeri pattern',
       title: 'Continuous runs'
     },
     {
-      src: '/assets/printing-machine-detail.jpeg',
+      src: 'assets/printing-machine-detail.jpeg',
       alt: 'Screen printing machinery producing detailed textile patterns',
       title: 'Pattern precision'
     },
     {
-      src: '/assets/outdoor-fabric-drying.jpeg',
+      src: 'assets/outdoor-fabric-drying.jpeg',
       alt: 'White fabric drying after textile processing',
       title: 'Fabric drying'
     },
     {
-      src: '/assets/fabric-processing-roll.jpeg',
+      src: 'assets/fabric-processing-roll.jpeg',
       alt: 'Fabric roll processing in the Vedic Vastram factory',
       title: 'Roll processing'
     },
     {
-      src: '/assets/fabric-inspection-station.jpeg',
+      src: 'assets/fabric-inspection-station.jpeg',
       alt: 'Fabric inspection and folding station',
       title: 'Inspection'
     }
