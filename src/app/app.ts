@@ -32,6 +32,7 @@ export class App {
   readonly filters = ['All', 'Screen Print', 'Cotton', 'Rayon', 'Custom Print'];
   activeFilter = 'All';
   zoomedImage: GalleryImage | null = null;
+  isMobileMenuOpen = false;
 
   readonly catalogue: CatalogueItem[] = [
     {
@@ -65,20 +66,11 @@ export class App {
   ];
 
   readonly gallery: GalleryImage[] = [
+
     {
-      src: 'assets/screen-printing-line.jpeg',
-      alt: 'Long screen printing line at Vedic Vastram in Sanganer Jaipur',
-      title: 'Printing line'
-    },
-    {
-      src: 'assets/continuous-print-run.jpeg',
-      alt: 'Continuous fabric print run with green Sanganeri pattern',
-      title: 'Continuous runs'
-    },
-    {
-      src: 'assets/printing-machine-detail.jpeg',
-      alt: 'Screen printing machinery producing detailed textile patterns',
-      title: 'Pattern precision'
+      src: 'assets/dyeing.jpeg',
+      alt: 'Textile dyeing machine in the Vedic Vastram workshop',
+      title: 'Fabric dyeing'
     },
     {
       src: 'assets/outdoor-fabric-drying.jpeg',
@@ -86,15 +78,34 @@ export class App {
       title: 'Fabric drying'
     },
     {
+      src: 'assets/fabric-inspection-station.jpeg',
+      alt: 'Fabric inspection and folding station',
+      title: 'Batching'
+    },
+    {
       src: 'assets/fabric-processing-roll.jpeg',
       alt: 'Fabric roll processing in the Vedic Vastram factory',
       title: 'Roll processing'
     },
     {
-      src: 'assets/fabric-inspection-station.jpeg',
-      alt: 'Fabric inspection and folding station',
-      title: 'Inspection'
-    }
+      src: 'assets/screen-printing-line.jpeg',
+      alt: 'Long screen printing line at Vedic Vastram in Sanganer Jaipur',
+      title: 'Printing line'
+    },
+    {
+      src: 'assets/printing-machine-detail.jpeg',
+      alt: 'Screen printing machinery producing detailed textile patterns',
+      title: 'Pattern precision'
+    },
+    {
+      src: 'assets/continuous-print-run.jpeg',
+      alt: 'Continuous fabric print run with green Sanganeri pattern',
+      title: 'Continuous runs'
+    },
+
+
+
+
   ];
 
   readonly capabilities = [
@@ -146,5 +157,13 @@ export class App {
 
   closeZoom(): void {
     this.zoomedImage = null;
+  }
+
+  toggleMobileMenu(): void {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  closeMobileMenu(): void {
+    this.isMobileMenuOpen = false;
   }
 }
